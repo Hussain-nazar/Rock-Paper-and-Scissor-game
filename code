@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart quantity</title>
+    <style>
+      button{
+        color:green;
+        background-color: yellow;
+        width: 150px;
+        height: 100px;
+        font-weight: bolder;
+
+      
+      }
+      *{
+        background-color: black;
+  
+      }
+      img{
+        width:500px;
+        padding: 0,100px;
+      }
+      
+    </style>
+</head>
+<body>
+  
+  <h1 style="color:blue">ROCK PAPER AND SCESSIOR</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVXZkxOi44fRmlhOtT93BhsQfe4QZlRsmtg&usqp=CAU">
+  <button onclick="
+ let randomName=Math.random();
+ let computerMove=' ';
+ if(randomName>=0 && randomName<1/3)
+ {
+  computerMove='rock';
+ }
+ else if(randomName>=1/3 && randomName<2/3)
+ {
+  computerMove='paper';
+ }
+ else if(randomName>=2/3 && randomName<1)
+ {
+  computerMove='sceissor';
+ }
+ console.log(computerMove);
+
+ let typeMove=' ';
+ if(computerMove==='rock')
+ {
+  typeMove='tie';
+ }
+ if(computerMove==='paper')
+{
+  typeMove='lose';
+}
+if(computerMove==='sceissor')
+{
+  typeMove=' win';
+}
+alert(`computer chosen ${computerMove} and you  ${typeMove} tha match `);
+ ">
+
+ Rock</button>
+ <button onclick="
+ 
+ let randomClick=Math.random();
+ let computerNovt=' ';
+ if(randomClick>=0 && randomClick<1/3)
+ {
+  computerNovt='rock';
+ }
+ else if(randomClick>=1/3 && randomClick<2/3)
+ {
+  computerNovt='paper';
+ }
+ else if(randomClick>=2/3 && randomClick<1)
+ {
+  computerNovt='sceissor';
+ }
+ console.log(computerNovt);
+
+ let typenovt=' ';
+ if(computerNovt==='rock')
+ {
+  typeNovt='win';
+ }
+ if(computerNovt==='paper')
+{
+  typeNovt='tie';
+}
+if(computerNovt==='sceissor')
+{
+  typeNovt='lose';
+}
+alert(`computer chosen ${computerNovt} and ${typeNovt} tha match `);">Paper</button>
+<button onclick="
+let randomClict=Math.random();
+let computerNove=' ';
+if(randomClict>=0 && randomClict<1/3)
+{
+ computerNove='rock';
+}
+else if(randomClict>=1/3 && randomClict<2/3)
+{
+ computerNove='paper';
+}
+else if(randomClict>=2/3 && randomClict<1)
+{
+ computerNove='sceissor';
+}
+console.log(computerNove);
+
+let typeNovq=' ';
+if(computerNove==='rock')
+{
+ typeNovq='lose';
+}
+if(computerNove==='paper')
+{
+ typeNovq='win';
+}
+if(computerNove==='sceissor')
+{
+ typeNovq='tie';
+}
+alert(` computer chosen ${computerNove} and you  ${typeNovq} tha match `);">scissor</button>
+</body>
+</html>
